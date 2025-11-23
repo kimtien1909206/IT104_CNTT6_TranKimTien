@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.card{
+   
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
+.card .desc{
+    color: grey;
+}
+.card ul{
+    list-style-type: none;
+    cursor: pointer;
+}
+.card li {
+    color: red;
+}
+.img img{
+    width: 100%;
+}
+.card li::before,
+.card li::after{
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: red;
+    display: inline-block;
+}
+.card li:hover{
+    color: blue;
+    font-weight: bold;
+}
+.card li::after,
+.card li::before{
+    background-color: blue;
+}
+button{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 20px;
+    border: none;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: red;
+    cursor: pointer ;
+}
+
+

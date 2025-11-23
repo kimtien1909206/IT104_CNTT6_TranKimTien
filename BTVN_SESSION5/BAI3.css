@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h2{
+    color: aqua;
+}
+.decs{
+   line-height: 1.8; 
+}
+.card{
+    background-color: beige;
+    line-height: 1.5;
+    border-left: 10px solid yellow;
+    padding-left: 15px;
+}

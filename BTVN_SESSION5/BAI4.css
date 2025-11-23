@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+span{
+    color: red;
+}
+.decs{
+    text-align: center;
+    border: 3px solid green;
+    
+}
+.card{
+    line-height: 1.8;
+    background-color: #ccc;
+    
+}
+.box{
+    background-color: white;
+    border-left: 8px solid green;
+    
+}
+.blue{
+    color: blue;
+}
+.brown{
+    color: brown;
+}
+button{
+    background-color: green;
+    height: 30px;
+    
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
