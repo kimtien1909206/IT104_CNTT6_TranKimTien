@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#card-container{
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+}
+.card + .card {
+    margin-top: 16px;
+}
+.card{
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 3px;
+}
+.card h3{
+    margin: 0 0 16px;
+    font-size: 20px;
+}
+.card p {
+    margin: 0;
+    font-size: 16px;
+    color: black;
+}
+.card:hover{
+    background-color: rgb(204, 225, 225);
+    cursor: pointer;
+}

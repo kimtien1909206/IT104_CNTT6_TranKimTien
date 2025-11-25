@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: aqua;
+}
+h2{
+    color: aquamarine;
+}
+p{
+    color: rgb(198, 112, 112);
+}
+.highlight{
+    background-color: blanchedalmond;
+    color: rgb(172, 172, 218);
+}

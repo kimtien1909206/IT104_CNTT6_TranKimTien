@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.card{
+    padding: 16px 18px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+.card[data-type="primary"]{
+    background-color: aqua;
+}
+.card[data-type="secondary"]{
+    background-color: grey;
+}
+.card[data-type="danger"]{
+    background-color: red;
+}
