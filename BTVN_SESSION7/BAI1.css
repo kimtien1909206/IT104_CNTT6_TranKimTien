@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(234, 234, 234);
+
+}
+.featured-title{
+    font-size: 50px;
+    width: 730px;
+}
+
+li{
+    position: relative;
+}
+li img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+li span {
+    padding-left: 30px;
+    
+}
+.actions{
+    margin-top: 50px;
+}
+button{
+    min-width: 100px;
+    padding: 8px 20px;
+    cursor: pointer;
+    
+}
+.btn-left{
+    background-color: rgb(188, 34, 41);
+    color: white;
+    border: 1px solid rgb(188, 34, 41);
+    border-radius: 5px;
+}
+.btn-right{
+    background-color: transparent;
+    border: 1px solid rgb(201, 197, 214);
+    border-radius: 5px;
+}
