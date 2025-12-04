@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+}
+.news-left .news-card {
+    width: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-card img {
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+
+.text-box {
+    padding: 12px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.tag {
+    font-size: 12px;
+    opacity: 0.9;
+}
+.news-mid {
+    width: 280px;
+}
+
+.small-item {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.small-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+}
+
+.more-btn {
+    padding: 8px 20px;
+    background: #d3d9e0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.ranking table {
+    width: 100%;
+    background: #f3f6fa;
+    padding: 10px;
+    border-collapse: collapse;
+    border-radius: 12px;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+}
+
+table tr:nth-child(even) {
+    background: #e8edf3;
+}

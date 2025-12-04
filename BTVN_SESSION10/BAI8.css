@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* nền trắng giống trang báo */
+}
+
+/* Thanh menu trên cùng dùng div, không dùng flex để đơn giản */
+.top-menu {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 60px;
+}
+
+.top-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu li {
+    display: inline-block;      /* dùng display inline-block cho từng mục */
+    margin-right: 24px;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Khối chính giữa trang */
+.container {
+    max-width: 1120px;
+    margin: 25px auto;
+    background-color: #ffffff;
+    padding: 20px 15px 25px 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Dùng inline-block để tạo 2 cột: trái và phải */
+.main-news {
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+}
+
+.sidebar {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    margin-left: 2%;
+    /* bỏ khoảng trắng giữa các .box inline-block để không bị rớt dòng */
+    font-size: 0;
+}
+
+.main-news img {
+    width: 100%;
+    height: auto;
+}
+
+.main-news h2 {
+    font-size: 26px;
+    margin: 12px 0 8px 0;
+}
+
+.main-news p {
+    font-size: 14px;
+    color: #444;
+}
+
+/* Hộp bên phải: TOP STORIES và QUICK BITES */
+.box {
+    background-color: #f8f9fa;
+    padding: 15px;
+    /* đặt hai hộp nằm ngang cạnh nhau trong sidebar */
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.top-stories,
+.quick-bites {
+    /* khôi phục cỡ chữ bị font-size:0 của .sidebar ảnh hưởng */
+    font-size: 13px;
+}
+
+.box h3 {
+    background-color: #ffd600;  /* vàng giống hình */
+    font-size: 14px;
+    padding: 6px 8px;
+    margin: -15px -15px 10px -15px; /* kéo header ra sát mép box */
+}
+
+.top-stories ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-stories li {
+    font-size: 13px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 4px;
+}
+
+.quick-bites p {
+    font-size: 13px;
+    color: #333;
+}
