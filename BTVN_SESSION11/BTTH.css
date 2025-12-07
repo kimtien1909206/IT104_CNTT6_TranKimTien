@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 56px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+header ul{
+    display: flex;
+    gap:20px;
+    list-style: none;
+}
+header ul a{
+    text-decoration: none;
+    color: rgb(255, 21, 29);
+}
+header h1 {
+    color: rgb(255, 21, 29);
+}
+
+main{
+    padding: 20px 50px;
+
+}
+.main-popular{
+    display: flex;
+    gap: 20px;
+    
+}
+.main-popular article:first-child
+.main-popular article:last-child{
+    flex-grow: 1;
+
+}
+.main-popular article:nth-child{
+    flex-grow: 2;
+}
+article{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 100px;
+    padding: 10px;
+    font-weight: bold;
+}
+.main-posts{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+
+}
+.main-posts article {
+    width: calc(100%/4 -14px);
+
+}
+footer{
+display: flex;
+justify-content: space-between;
+padding: 0 50px;
+height: 56px;
+align-items: center;
+border-top: 1px solid #ddd;
+}
+@media screen and (max-width: 1024px) {
+    .main-posts{
+        flex-wrap: wrap;
+    }
+    .main-posts article{
+        width: calc(100%/4-10px);
+    }
+}
+@media screen and (max-width: 628px) {
+    header ul{
+        display: none;
+    }
+    header .menu-mobile{
+        flex-direction: column;
+    }
+    .main-popular article{
+        height: auto;
+    }
+    .main-posts article{
+        width: 100%;
+    }
+    footer p:first-child{
+        display: none;
+    }
+    
+}

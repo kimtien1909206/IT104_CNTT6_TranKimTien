@@ -1,0 +1,86 @@
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 50px;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+header div{
+    background-color: orange;
+    width: 100%;   
+    text-align: center;
+    height: 100px;
+}
+main{
+    width: 100%;
+    background-color: yellow;
+    height: 400px;
+    margin-top: 20px;
+    text-align: center;
+}
+section .container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 20px;
+}
+section .container .child{
+    background-color: blue;
+    width: 100%;
+    text-align: center;
+    height: 200px;
+}
+footer .content{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 12px;
+    margin-top: 20px;
+}
+footer .content .info{
+    background-color: gray;
+    width: calc(25% - 12px);
+    text-align: center;
+    height: 150px;
+    flex-grow: 1;
+}
+@media screen and (max-width: 1200px) {
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+    section .container{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    footer .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }   
+    footer .content .info{
+        width: calc( 50% - 12px );
+    }
+}
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+    section .container{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    footer .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }   
+    footer .content .info{
+        width: 100%;
+    }
+}

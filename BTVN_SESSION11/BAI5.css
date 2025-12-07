@@ -1,0 +1,173 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e5e5e5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: #e5e5e5;
+        }
+        .logo {
+            background-color: #d3d3d3;
+            padding: 15px 20px;
+            font-weight: bold;
+            color: #333;
+            overflow: hidden;
+        }
+
+        .logo span {
+            float: left;
+        }
+        .menu-icon {
+            cursor: pointer;
+            float: right;
+            width: 25px;
+            height: 20px;
+        }
+
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            display: block;
+            margin-bottom: 4px;
+            float: none;
+        }
+
+        .menu-icon span:last-child {
+            margin-bottom: 0;
+        }
+        #nav, #main, #aside, .column1, .column2, .column3, .column4, .column5, .column6 {
+            background-color: #dc3545;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .logo {
+            width: 100%;
+            display: block;
+        }
+
+        #nav, #main, #aside {
+            width: 100%;
+            display: block;
+        }
+
+        .columns-wrapper {
+            display: none; 
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .header-wrapper {
+                font-size: 0; 
+            }
+
+            .logo {
+                width: 33.33%; 
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 10px;
+                font-size: 16px; 
+            }
+
+            #nav {
+                width: calc(66.67% - 10px);
+                display: inline-block;
+                vertical-align: top;
+                font-size: 16px;
+            }
+
+            .main-wrapper {
+                display: block;
+            }
+
+            #main, #aside {
+                width: 100%;
+                display: block;
+            }
+            .columns-wrapper {
+                display: block;
+                font-size: 0; 
+            }
+
+            .column1, .column2, .column3, .column4 {
+                width: calc(50% - 5px);
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 10px;
+                font-size: 16px;
+            }
+            .column2, .column4 {
+                margin-right: 0; 
+            }
+            .column5, .column6 {
+                display: none; 
+            }
+        }
+        @media (min-width: 1200px) {
+            .header-wrapper {
+                font-size: 0; 
+            }
+
+            .logo {
+                width: 25%; 
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 10px;
+                font-size: 16px; 
+            }
+
+            #nav {
+                width: calc(75% - 10px); 
+                display: inline-block;
+                vertical-align: top;
+                font-size: 16px; 
+            }
+
+            .main-wrapper {
+                display: block;
+                font-size: 0; 
+            }
+
+            #main {
+                width: calc(66.67% - 5px); 
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 10px;
+                font-size: 16px;
+            }
+            #aside {
+                width: calc(33.33% - 5px); 
+                display: inline-block;
+                vertical-align: top;
+                font-size: 16px; 
+            }
+
+            .columns-wrapper {
+                display: block;
+                font-size: 0; 
+            }
+
+            .column1, .column2, .column3, .column4, .column5, .column6 {
+                width: calc(33.33% - 7px);
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 10px;
+                font-size: 16px; 
+            }
+
+            .column3, .column6 {
+                margin-right: 0; 
+            }
+        }
+    
