@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  padding: 40px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.rikkei-card {
+  width: 300px;
+  height: 260px;
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.b-icon {
+  background-color: #6f42c1;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+.b-icon span {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+.info-text {
+  position: absolute;
+  bottom: 18px;
+  right: 15px;
+
+  font-size: 14px;
+  opacity: 0.9;
+}
